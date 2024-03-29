@@ -10,6 +10,44 @@
     margin: 0;
     padding: 0;
 }
+/* Your existing CSS code */
+
+/* Add the media query at the end of your CSS file */
+@media only screen and (max-width: 768px) {
+    #game {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #left-pannel,
+    #right-pannel {
+      width: 100%;
+      height: auto;
+    }
+    
+    #game-console {
+      width: 80%;
+      height: 40vh;
+      margin-top: 5vh;
+    }
+    
+    .btn {
+        width: calc(33.33% - 10px); /* Adjust button width */
+        height: calc(33.33% - 10px); /* Adjust button height */
+        margin: 5px; /* Adjust button margin */
+        max-width: none; /* Remove max-width */
+        max-height: none; /* Remove max-height */
+        box-shadow: 5px 5px 5px;
+        font-size: 16px;
+        border-radius: 20%;
+    }
+    
+    #reset {
+      width: 70%;
+      margin-top: 5%;
+    }
+  }
+  
 
 #popupContainer {
   display: none;
@@ -61,19 +99,16 @@
   border-radius: 10%;
   position: relative;
 }
-.btn {
-  position: relative;
-  /* width:calc(33.33% - 10px); 33.33% for each button with 10px margin */
-  margin: 5px;
-  border-radius: 20%;
-  box-shadow: 5px 5px 5px;
-  padding: 10px 20px; /* Keep padding consistent */
-  font-size: 16px;
-  min-width: 115px; /* Set a minimum width */
-  min-height: 115px; /* Set a minimum height */
-  max-width: 115px; /* Set a maximum width */
-  max-height: 115px; /* Set a maximum height */
+
+.btn{
+    width: calc(33.33% - 10px); /* Adjust button width */
+    height: calc(33.33% - 10px); 
+    margin: 5px;
+    box-shadow: 5px 5px 5px;
+    font-size: 16px;
+    border-radius: 20%;
 }
+
 .btn:disabled{
   opacity: 1;
   color: black;
