@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+* > * {
+    box-sizing: border-box;
+    font-family: "Noto Serif", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#popupContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.768);
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  z-index: 9999;
+}
+
+#popupContent {
+  text-align: center;
+}
+
+/* #closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: aqua;
+} */
+#game{
+  display: flex;
+  justify-content: space-around;
+  background-color: #548687;
+  height: 100vh;
+}
+#right-pannel,#left-pannel{
+  background-color: rgba(0, 72, 139, 0.868);
+  width: 50vh;
+  height:90%;
+  text-align: center;
+
+/* width: 300px; */
+
+}
+#game-console {
+  width: 50vh;
+  height: 50vh;
+  background-color: rgb(89, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10vh;
+  border-radius: 10%;
+  position: relative;
+}
+.btn {
+  position: relative;
+  /* width:calc(33.33% - 10px); 33.33% for each button with 10px margin */
+  margin: 5px;
+  border-radius: 20%;
+  box-shadow: 5px 5px 5px;
+  padding: 10px 20px; /* Keep padding consistent */
+  font-size: 16px;
+  min-width: 115px; /* Set a minimum width */
+  min-height: 115px; /* Set a minimum height */
+  max-width: 115px; /* Set a maximum width */
+  max-height: 115px; /* Set a maximum height */
+}
+.btn:disabled{
+  opacity: 1;
+  color: black;
+}
+.btn:hover{
+  background-color: #00000072;
+}
+#reset{
+  width: 100px;
+  height: 70px;
+  margin-top: 5vh;
+  border-radius: 20%;
+  box-shadow: none;
+  color: #000000;
+  background-color: rgb(0, 255, 170);
+
+}
+#reset:hover{
+  background-color: #ff0000b1;
+}
+#main>h1,p{
+    text-align: center;
+}
+#left-pannel{
+}
+#right-pannel{
+   /* margin-left: 20px; */
+}
+/* body {
+  background-color: #548687;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+} */
